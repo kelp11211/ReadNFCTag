@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ReadNFCTag</string>
+
+    <string name="nfc">請將NFC卡片靠近手機背面</string>
+    <string name="nfc_remainder">讀取到卡片後，將顯示卡片資訊</string>
+    <string name="no_nfc">此裝置不支援NFC</string>
+    <string name="open_nfc">請打開裝置的NFC功能</string>
+</resources>

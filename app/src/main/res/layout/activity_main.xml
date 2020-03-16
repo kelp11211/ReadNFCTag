@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:keepScreenOn="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_image_text"
+        android:layout_width="@dimen/layout_size"
+        android:layout_height="@dimen/layout_size"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/layout_margin_15"
+        android:layout_marginBottom="@dimen/layout_margin_15"
+        android:background="@drawable/border_blue_radius10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/layout_margin_30"
+
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/card" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_margin_30"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/textcolor_black"
+                android:text="@string/nfc" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/readcard_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/layout_margin_15"
+        android:text="@string/nfc_remainder"
+        android:textColor="@color/textcolor_black"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="366dp"
+        android:layout_gravity="bottom|center|center_horizontal"
+        android:layout_marginStart="@dimen/layout_margin_15"
+        android:layout_marginEnd="@dimen/layout_margin_15"
+        android:layout_marginBottom="@dimen/layout_margin_15"
+        android:background="@color/bg_show"
+        android:padding="@dimen/padding"
+        android:textColor="@color/textcolor_black"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>
+
